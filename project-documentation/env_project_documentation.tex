@@ -2,7 +2,8 @@
 \setuppapersize[A4][A4]
 \language[de]
 \mainlanguage[de]
-\setuplanguage[de][lefthyphemin=2]
+\setuplanguage[de][lefthyphenmin=2]
+\setuphyphenmark[sign=normal]
 \setuplayout[width=middle,height=27cm,backspace=2.5cm,topspace=1.5cm,header=1em,headerdistance=1cm,footer=1em,footerdistance=1cm]
 \setupexternalfigures[directory={graphics},location=global]
 \setuppagenumbering[location={footer,right}]
@@ -94,7 +95,7 @@ setbounds currentpicture to Page;
 \setupTABLE[loffset=5pt,roffset=5pt,toffset=2.5pt,boffset=2.5pt]
 \setupTABLE[each][align={flushleft,lohi}]
 
-\definehighlight[code][style=\tt]
+\definehighlight[Code][style=\tt]
 \definehighlight[Important][style=\it]
 \definehighlight[EnumHead][style=\bf]
 
@@ -126,5 +127,5 @@ setbounds currentpicture to Page;
 \definetyping[command][numbering=none,
                     before={\startframedcode},
                     after={\stopframedcode}]
-                                        
+
 \stopenvironment
