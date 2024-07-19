@@ -2,7 +2,8 @@
 \setuppapersize[A4][A4]
 \language[de]
 \mainlanguage[de]
-\setuplanguage[de][lefthyphemin=2]
+\setuplanguage[de][lefthyphenmin=2]
+\setuphyphenmark[sign=normal]
 \setuplayout[width=middle,height=27cm,backspace=2.5cm,topspace=1.5cm,header=1em,headerdistance=1cm,footer=1em,footerdistance=1cm]
 \setupexternalfigures[directory={graphics},location=global]
 \setuppagenumbering[location={footer,right}]
@@ -44,7 +45,7 @@
 \setuphead[subsubject][style=\tfb]
 \setuphead[subsubsubject][style=\tfa]
 
-\setuplabeltext[de][chapter=Kapitel~]
+\setuplabeltext[de][chapter=Abschnitt~]
 
 \setuplayouttext[header][text]
   [righttext={\getmarking[chapter]},
@@ -58,8 +59,8 @@
 
 \setupinteraction
   [state=start,
-    title={Green Code Analysis},
-    author={Green Code Analysis Development Team},
+    title={Theo-IDE},
+    author={Theo-IDE Development Team},
     subtitle={Projektdokumentation},
     keyword={code,green,development,project},
     color=MidnightBlue,
@@ -94,8 +95,8 @@ setbounds currentpicture to Page;
 \setupTABLE[loffset=5pt,roffset=5pt,toffset=2.5pt,boffset=2.5pt]
 \setupTABLE[each][align={flushleft,lohi}]
 
-\definehighlight[code][style=\tt]
-\definehighlight[important][style=\it]
+\definehighlight[Code][style=\tt]
+\definehighlight[Important][style=\it]
 \definehighlight[EnumHead][style=\bf]
 
 \definereferenceformat[infig][text=\labeltext{figure}]
@@ -126,5 +127,5 @@ setbounds currentpicture to Page;
 \definetyping[command][numbering=none,
                     before={\startframedcode},
                     after={\stopframedcode}]
-                                        
+
 \stopenvironment
